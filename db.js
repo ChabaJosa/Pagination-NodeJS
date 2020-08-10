@@ -3,7 +3,7 @@ const colors = require("colors");
 
 const connectDB = async () => {
   const MONGODB_URI =
-    "mongodb+srv://PaginationDB:1234Chaba@paginationcluster.iewbd.mongodb.net/sample_airbnb?retryWrites=true&w=majority";
+    "mongodb+srv://PaginationDB:1234Chaba@paginationcluster.iewbd.mongodb.net/AppsDB?retryWrites=true&w=majority";
   try {
     mongoose
       .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
