@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const colors = require("colors");
 
+// const User = require("./models/user");
+
 const connectDB = async () => {
   const MONGODB_URI =
     "mongodb+srv://PaginationDB:1234Chaba@paginationcluster.iewbd.mongodb.net/AppsDB?retryWrites=true&w=majority";
@@ -21,3 +23,26 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+
+
+// The following was used to populate the MongoDB Database
+    
+    // var db = mongoose.connection;
+    // db.on("error", console.error.bind(console, "connection error:"));
+    // db.once("open", function () {
+    //   console.log("Connection Successful!");
+    //   // documents array
+    //   var newUsers = [];
+
+    //   for (let i = 10; i < 100; i++) {
+    //     newUsers.push({ name: `my-app-0${i}`, id: i });
+    //   }
+
+    //   User.collection.insert(newUsers, function (err, docs) {
+    //     if (err) {
+    //       return console.error(err);
+    //     } else {
+    //       console.log("Multiple documents inserted to Collection");
+    //     }
+    //   });
+    // });

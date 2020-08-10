@@ -24,10 +24,8 @@ function paginatedResults(model) {
       );
 
       if (by === "name") {
-        // console.log("Name", by, order);
-        order === "asc" ? result.results.sort() : result.results.reverse();
+        order === "desc" ? result.results.reverse() : result.results.sort();
       } else if (by === "id") {
-        // console.log("id", by, order);
         order === "asc"
           ? result.results.sort((a, b) => a.id - b.id) // Not Working Properly
           : result.results.sort((a, b) => b.id - a.id); // Not Working Properly
