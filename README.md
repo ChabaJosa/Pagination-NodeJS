@@ -20,8 +20,9 @@ Now play around by changing the following highlighted params and query options! 
 
 https://pagination-backend.herokuapp.com/apps/ `name/id `?start=` 1/my-app-001 `&end=` 50/my-app-050 `&max=` 10 `&order=` asc/desc `
 
-###### Sample Query: 
-Sample Query: https://pagination-backend.herokuapp.com/apps/name?start=my-app-001&end=my-app-050&max=10&order=desc
+###### Sample Queries: 
+Sample Query (Name): https://pagination-backend.herokuapp.com/apps/name?start=my-app-001&end=my-app-050&max=10&order=desc
+Sample Query (ID): https://pagination-backend.herokuapp.com/apps/id?start=1&end=70&max=80&order=asc
 
 ###### Note: 
 In both `start`, `end` and `max` options, any number from 1 to 99 is available since this is how many users we have in our DB. <br/>
