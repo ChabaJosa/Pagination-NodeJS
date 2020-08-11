@@ -15,15 +15,12 @@ To interact with this API read the following steps:
 
 ##### Step #1:
 
-Follow this 
-[link]: https://pagination-backend.herokuapp.com/apps/
-
-which should lead you to a default result of 50 apps.<br/>
+Follow this https://pagination-backend.herokuapp.com/apps/ which should lead you to a default result of 50 apps.<br/>
 Now play around by changing the following highlighted params and query options!
 https://pagination-backend.herokuapp.com/apps/`name/id`?start=`1/my-app-001`1&end=`50/my-app-050`&max=`10`&`asc/desc`
 
 ###### Sample Query: 
-Sample Query: [https://pagination-backend.herokuapp.com/apps/name?start=my-app-001&end=my-app-050&max=10&order=desc]: https://pagination-backend.herokuapp.com/apps/name?start=my-app-001&end=my-app-050&max=10&order=desc
+Sample Query: https://pagination-backend.herokuapp.com/apps/name?start=my-app-001&end=my-app-050&max=10&order=desc
 
 ###### Note: 
 In both `start`, `end` and `max` options, any number from 1 to 99 is available since this is how many users we have in our DB. <br/>
