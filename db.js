@@ -25,7 +25,7 @@ const connectDB = async () => {
 module.exports = connectDB;
 
 
-// The following was used to populate the MongoDB Database
+// The following was used to populate the MongoDB 
     
     // var db = mongoose.connection;
     // db.on("error", console.error.bind(console, "connection error:"));

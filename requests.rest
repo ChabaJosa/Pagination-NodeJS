@@ -1,1 +1,1 @@
-GET http://localhost:5000/apps?by=name&start=2&end=4&max=6&order=des
+GET http://localhost:5000/apps/name?max=30&start=55&order=desc
