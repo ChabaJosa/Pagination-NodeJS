@@ -28,7 +28,7 @@ function paginatedResults(model) {
             : startIndex + maxIndex ;
 
         let rawDataArray = await model.find({}, { _id: 0 }).exec();
-        result.results = rawDataArray.slice(
+        result.range = rawDataArray.slice(
           startIndex,
           helperIndex || endIndex || startIndex + 50
         );
@@ -42,13 +42,13 @@ function paginatedResults(model) {
             : startIndex + maxIndex;
 
         let rawDataArray = await model.find({}, { _id: 0 }).exec();
-        result.results = rawDataArray.slice(
+        result.range = rawDataArray.slice(
           startIndex,
           helperIndex || endIndex || startIndex + 50
         );
       }
 
-      order === "desc" ? result.results.reverse() : result.results.sort();
+      order === "desc" ? result.range.reverse() : result.range.sort();
 
       res.paginatedResults = result;
       next();
