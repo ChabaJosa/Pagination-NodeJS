@@ -1,5 +1,4 @@
 # About this App
-======
 This is a NodeJS/Express App with a MongoDB that uses pagination with the created API to query data.<br/>
 
 My approach to this solution, since I had never encountered pagination before, was to go through some tutorials 
@@ -11,7 +10,6 @@ Finally, to implement pagination in the mainRoute I used a helper function as mi
 
 
 ## Instructions
-------
 
 To interact with this API read the following steps:
 
